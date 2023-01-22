@@ -18,4 +18,21 @@ def is_prime(n):
     return (4 > n > 0) or (n % 2 != 0 and n % 3 != 0)
 
 
-prime()
+def is_pow_2(n):
+    bits = bin(n)
+    count = 0
+    for b in bits:
+        if b == "1":
+            count += 1
+    return count == 1
+
+
+print(is_pow_2(0))
+print(is_pow_2(1))
+print(is_pow_2(2))
+print(is_pow_2(3))
+print(is_pow_2(6))
+print(is_pow_2(8))
+print(is_pow_2(9))
+print(is_pow_2(12))
+print(is_pow_2(16))
