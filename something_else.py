@@ -27,12 +27,18 @@ def is_pow_2(n):
     return count == 1
 
 
-print(is_pow_2(0))
-print(is_pow_2(1))
-print(is_pow_2(2))
-print(is_pow_2(3))
-print(is_pow_2(6))
-print(is_pow_2(8))
-print(is_pow_2(9))
-print(is_pow_2(12))
-print(is_pow_2(16))
+def other_power_2(n):
+    while n % 2 == 0 and n > 1:
+        n = n / 2
+    return n == 1
+
+
+print(other_power_2(0))
+print(other_power_2(1))
+print(other_power_2(2))
+print(other_power_2(3))
+print(other_power_2(6))
+print(other_power_2(8))
+print(other_power_2(9))
+print(other_power_2(12))
+print(other_power_2(16))
